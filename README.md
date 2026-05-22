@@ -5,7 +5,7 @@ An end-to-end computer vision project implementing a custom **TinyVGG** Convolut
 ## 🚀 Key Features
 * **PyTorch-Native Architecture:** From-scratch implementation of the TinyVGG architecture optimized for grayscale digit recognition.
 * **Hardware Benchmarking:** Comparative performance profiling demonstrating a **3.16x training acceleration** using NVIDIA CUDA.
-* **Optimized Data Pipeline:** Mini-batched ($batch\_size=32$) and shuffled training pipelines via PyTorch DataLoaders.
+* **Optimized Data Pipeline:** Mini-batched ($batchsize=32$) and shuffled training pipelines via PyTorch DataLoaders.
 * **Advanced Evaluation:** Multi-class confusion matrix generation and prediction diagnostics leveraging **Torchmetrics**.
 
 ---
@@ -43,8 +43,8 @@ The network is composed of repeating convolutional blocks utilizing small $3 \ti
 ```text
 Input (1x28x28) 
    │
-   ├── [Conv Block 1] ──► Conv2d (10 filters) ──► ReLU ──► Conv2d (10 filters) ──► ReLU ──► MaxPool2d
+   ├── [Conv Block 1] ──► Conv2d (12 filters) ──► ReLU ──► Conv2d (12filters) ──► ReLU ──► MaxPool2d
    │
-   ├── [Conv Block 2] ──► Conv2d (10 filters) ──► ReLU ──► Conv2d (10 filters) ──► ReLU ──► MaxPool2d
+   ├── [Conv Block 2] ──► Conv2d (12 filters) ──► ReLU ──► Conv2d (12 filters) ──► ReLU ──► MaxPool2d
    │
    └── [Classifier]   ──► Flatten ──► Linear Layer (10 output classes) ──► Logits

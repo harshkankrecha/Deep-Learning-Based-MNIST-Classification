@@ -43,7 +43,7 @@ The network is composed of repeating convolutional blocks utilizing small $3 \ti
 ```text
 Input (1x28x28) 
    │
-   ├── [Conv Block 1] ──► Conv2d (12 filters) ──► ReLU ──► Conv2d (12filters) ──► ReLU ──► MaxPool2d
+   ├── [Conv Block 1] ──► Conv2d (12 filters) ──► ReLU ──► Conv2d (12 filters) ──► ReLU ──► MaxPool2d
    │
    ├── [Conv Block 2] ──► Conv2d (12 filters) ──► ReLU ──► Conv2d (12 filters) ──► ReLU ──► MaxPool2d
    │

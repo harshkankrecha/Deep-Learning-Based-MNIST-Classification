@@ -1,6 +1,6 @@
 # MNIST Image Classification & Hardware Benchmarking
 
-An end-to-end computer vision project implementing a custom **TinyVGG** Convolutional Neural Network (CNN) from scratch using **PyTorch**. This project focuses on high-accuracy digit classification, hardware acceleration profiling (CPU vs. GPU/CUDA), and deep diagnostic evaluation.
+An end-to-end computer vision project implementing a custom **TinyVGG** Convolutional Neural Network (CNN) from scratch using **PyTorch**. This project focuses on high-accuracy digit classification, hardware acceleration profiling (CPU vs. GPU), and deep diagnostic evaluation.
 
 ## 🚀 Key Features
 * **PyTorch-Native Architecture:** From-scratch implementation of the TinyVGG architecture optimized for grayscale digit recognition.
